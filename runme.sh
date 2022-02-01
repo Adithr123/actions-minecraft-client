@@ -8,10 +8,7 @@ sudo apt update
 sudo apt install nodejs npm wget nano git lua5.3
 
 # Forward ports
-sudo npm install -g localtunnel
-sudo chmod +x ./forward.sh
-sudo ./forward.sh &
-
+lt --port 80 --subdomain actions-minecraft-client(-mirror) & to lt --port 80 --subdomain [https://actions-minecraft-client.loca.lt/vnc.html] &
 # Start this code automatically:
 chmod +x ./gettop.sh
 sudo ./gettop.sh
